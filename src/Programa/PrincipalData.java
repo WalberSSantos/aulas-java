@@ -67,6 +67,20 @@ public class PrincipalData {
 		System.out.println("O minutos são: " + minuto);
 		System.out.println("O mês é: " + mes);
 		
+		System.out.println("============== Cálculo entre datas ==================");
+		
+		//define datas
+		Calendar dataCadastro = Calendar.getInstance();
+		dataCadastro.set(2019, 3, 1);
+		Calendar hoje = Calendar.getInstance();
+
+		
+		//calcula diferença
+		int meses = (hoje.get(Calendar.YEAR) * 12 + hoje.get(Calendar.MONTH))
+		        - (dataCadastro.get(Calendar.YEAR) * 12 + dataCadastro.get(Calendar.MONTH));
+	
+		System.out.println(meses);
 	}
+	
 
 }
